@@ -195,8 +195,6 @@ void TrapezoidalMapManager::addSegmentToTrapezoidalMap(const cg3::Segment2d& seg
     //structures, you could save directly the point (Point2d) in each trapezoid (it is fine).
 
 
-
-
     //#####################################################################
 
 

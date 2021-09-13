@@ -40,6 +40,11 @@ DISTFILES += \
     LICENSE
 
 SOURCES +=  \
+    algorithms/Functions.cpp \
+    data_structures/Dag.cpp \
+    data_structures/DagNode.cpp \
+    data_structures/Trapezoid.cpp \
+    data_structures/TrapezoidalMap.cpp \
     data_structures/segment_intersection_checker.cpp \
     data_structures/trapezoidalmap_dataset.cpp \
     drawables/drawable_trapezoidalmap_dataset.cpp \
@@ -51,10 +56,16 @@ FORMS += \
     managers/trapezoidalmapmanager.ui
 
 HEADERS += \
+    algorithms/Functions.h \
+    data_structures/Dag.h \
+    data_structures/DagNode.h \
+    data_structures/Trapezoid.h \
+    data_structures/TrapezoidalMap.h \
     data_structures/segment_intersection_checker.h \
     data_structures/trapezoidalmap_dataset.h \
     drawables/drawable_trapezoidalmap_dataset.h \
     managers/trapezoidalmap_manager.h \
+    utils/Definitions.h \
     utils/fileutils.h
 
 
