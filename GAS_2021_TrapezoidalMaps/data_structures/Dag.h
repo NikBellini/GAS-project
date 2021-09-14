@@ -14,6 +14,7 @@ public:
 
     size_t addNode(DagNode node);
     void overwriteNode(size_t id, DagNode node);
+    size_t getNodeByIndex(size_t i);
 
 };
 

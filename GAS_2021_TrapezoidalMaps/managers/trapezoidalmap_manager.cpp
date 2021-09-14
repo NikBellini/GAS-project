@@ -16,7 +16,7 @@
 //Do not change the following line
 #define BOUNDINGBOX 1e+6
 
-
+#include "algorithms/Functions.h"
 //----------------------------------------------------------------------------------------------
 //                         You have to write your code in the area below.
 //----------------------------------------------------------------------------------------------
@@ -48,6 +48,10 @@ TrapezoidalMapManager::TrapezoidalMapManager(QWidget *parent) :
     //be evaluated!). We remind C++ is not java, objects can be allocated in the
     //stack without dynamic allocation (new), so we suggest to study the slides
     //and see some examples. Avoid pointers, unless it is necessary!
+
+    dag = Dag();
+    trap = TrapezoidalMap();
+    dataset = TrapezoidalMapDataset();
 
     //UI setup
     ui->setupUi(this);
@@ -197,7 +201,7 @@ void TrapezoidalMapManager::addSegmentToTrapezoidalMap(const cg3::Segment2d& seg
 
     //#####################################################################
 
-
+    addSegment(segment, trap, dag);
 
     //You can delete this line after you implement the algorithm: it is
     //just needed to suppress the unused-variable warning
